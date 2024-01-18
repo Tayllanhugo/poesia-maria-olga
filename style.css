@@ -47,6 +47,7 @@ body {
 }
 
 .menu li a {
+    padding: 10px;
     display: block;
     margin-right: 100px;
     text-decoration: none;
@@ -206,13 +207,20 @@ span {
 
 
 @media (max-width: 767px) {
+    #container {
+        display: block;
+    }
+
     #container h1 {
         font-size: 2em;
+        text-align: center
     }
     .menu li a {
         display: block;
         margin-right: 10px;
-    }    
+        position: relative;
+        left: 50%;
+    }   
 }
 
 
