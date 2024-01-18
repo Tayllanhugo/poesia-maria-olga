@@ -213,13 +213,12 @@ span {
 
     #container h1 {
         font-size: 2em;
-        text-align: center
+        margin: 15px;
     }
     .menu li a {
         display: block;
         margin-right: 10px;
-        position: relative;
-        left: 50%;
+        
     }   
 }
 
