@@ -18,13 +18,18 @@ body {
 }
 
 #container {
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: fixed;
 }
 
-img {
-    width: 300px;
+#container h1 {
+    font-family: monospace;
+    letter-spacing: -3px;
+    font-size: 3em;
+    line-height: 96px;
     transform: translate(-300px);
     animation-name: animacao;
     animation-duration: 2s;
@@ -199,18 +204,34 @@ span {
     animation-fill-mode: forwards;
 }
 
-@media (max-width: 767px) {
-    img {
-        text-align: center;
-        position: relative;
-        bottom: 90px;
-    }
+.hamburger {
+    border: none;
+    background: none;
+    border-top: 3px solid white;
+    cursor: pointer;
+}
 
-    .menu li a {
+.hamburger::before,
+.hamburger::after {
+    content: "  ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    #container h1 {
+        font-size: 2em;
+    }
+    .menu {
+        display: none;
+    }
+    
+    .hamburger {
         display: block;
-        margin-right: 30px;
-        position: relative;
-        right: 255px;
+        
     }
 }
 
