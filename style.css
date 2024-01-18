@@ -18,7 +18,7 @@ body {
 }
 
 #container {
-    height: 100px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@ body {
     font-family: monospace;
     letter-spacing: -3px;
     font-size: 3em;
-    line-height: 96px;
+    line-height: 66px;
     transform: translate(-300px);
     animation-name: animacao;
     animation-duration: 2s;
@@ -204,35 +204,15 @@ span {
     animation-fill-mode: forwards;
 }
 
-.hamburger {
-    border: none;
-    background: none;
-    border-top: 3px solid white;
-    cursor: pointer;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: "  ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: white;
-    margin-top: 5px;
-}
 
 @media (max-width: 767px) {
     #container h1 {
         font-size: 2em;
     }
-    .menu {
-        display: none;
-    }
-    
-    .hamburger {
+    .menu li a {
         display: block;
-        
-    }
+        margin-right: 10px;
+    }    
 }
 
 
