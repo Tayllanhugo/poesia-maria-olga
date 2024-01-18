@@ -22,7 +22,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: fixed;
 }
 
 #container h1 {
