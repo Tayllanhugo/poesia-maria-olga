@@ -218,6 +218,31 @@ span {
         display: block;
         margin-right: 10px;
     }   
+
+    .name h1 {
+        font-family: Poppins, sans-serif;
+        color: #e39f5e;
+        font-size: 4em;
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.768);
+        transform: translate(-170%);
+        opacity: 0;
+        animation-name: animacao;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .name h3 {
+        font-family: Poppins, sans-serif;
+        color: white;
+        font-size: 2em;
+        text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.941);
+        border-bottom: 1px solid white;
+        opacity: 0;
+        transform: translate(-170%);
+        animation-name: animacao;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
 }
 
 
